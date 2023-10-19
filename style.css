@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 15px;
+    position: fixed;
+}
+
+nav h1 {
+    font-size: 40px;
+    color: white;
+
+}
+
+nav i {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+
+    color: white;
+    cursor: pointer;
+    padding: 5px 5px;
+
+}
+
+
+li:hover {
+    border-radius: 30px;
+    background-color: chocolate;
+    color: black;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 37, 46);
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    
+}
+
+.head{
+   
+    width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.head h1{
+font-size:50px ;
+}
+.head p{
+    font-size: 20px;
+}
+ .button{
+padding: 15px 15px;
+   border-radius: 30px;
+    border: 2px solid orangered;
+    cursor: pointer;
+    
+ }
+.button:hover{
+    background-color:orangered ;
+}
+
+
+@media screen and (max-width:576px) {
+   .head h1{
+        font-size: 35px;
+    }
+    .head p{
+        font-size: 17px;
+    }
+    .button{
+        padding: 15px 15px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    nav{
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+    nav i{
+        display: flex;
+
+    }
+}
